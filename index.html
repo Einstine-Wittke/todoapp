@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App Js</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Redressed&family=Shizuru&display=swap" rel="stylesheet">
+<body>
+    <div class="Container1">
+        <span class="task"> Tasks </span>
+        <span class="list"> Lists </span>
+        <i class="fa fa-plus-circle container1-add-btn" aria-hidden="true" onclick=addnewlist()></i>
+        <span class="add"> Add item </span>
+        <!-- Cards-Container -->
+        <div class="list-container" id="list_container">
+            <!-- <div class="list-box" id="">
+                <p class="list-heading">
+                    <span>List Card</span>
+                </p>
+                <hr>
+                <ul class="items-container" id=""></ul>
+                <span class="list-tools">
+                    <span onclick="">
+                        <i class="fa fa-plus-circle"></i>
+                    </span>
+                    <span onclick="">
+                        <i class="fas fa-trash-alt"></i>
+                    </span>
+                </span>
+            </div> -->
+        </div>
+
+        <div class="no">No items in the todo list</div>
+    </div>
+    <!-- <div id="tasks" class="parent"></div> -->
+    <div id="container">
+        <label for="List">Add New List</label>
+        <br>
+        <input type="text" name="List" id="list_title" placeholder="Add New List">
+        <br>
+        <button class="ADD" id="create_list">Add</button>
+        <button class="CLOSE" onclick="close1()">Close</button>
+    </div>
+    <div class="container2" id="task-popup">
+        <label for="List">Add New item</label>
+        <br>
+        <input type="text" name="item" id="task_title" placeholder="Add New item">
+        <br>
+        <button class="ADD" id="create_task">Add</button>
+        <button class="CLOSE" onclick="close2()">Close</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
